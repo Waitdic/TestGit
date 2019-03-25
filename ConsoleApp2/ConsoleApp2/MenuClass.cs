@@ -11,7 +11,7 @@ namespace ConsoleApp2
         public void Menu()
         {
             int menuPoint = 0;
-            Console.WriteLine("1) Constructor; \n0) Exit");
+            Console.WriteLine("1) Конструктор; \n0) Екзит");
             Console.Write("Point: ");
             menuPoint = int.Parse(Console.ReadLine());
             Console.WriteLine(menuPoint);
@@ -23,7 +23,7 @@ namespace ConsoleApp2
                         sampCons.Car();
                     break;
                 
-                default: Console.WriteLine("Its over!");
+                default: Console.WriteLine("Это конеЦ!");
                     break;
             }
         }

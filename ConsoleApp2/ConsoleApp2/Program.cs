@@ -11,7 +11,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             //int menuPoint;
-            Console.WriteLine("Please, enter menu number: ");
+            Console.WriteLine("Пожалуйста введите номер: ");
             //menuPoint = Console.Read();
             MenuClass M = new MenuClass();
             M.Menu();
