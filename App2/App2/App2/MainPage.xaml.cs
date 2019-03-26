@@ -11,9 +11,9 @@ namespace App2
     {
         public MainPage()
         {
+            
             InitializeComponent();
         }
-
         async void Button_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("Математишка", "а ты сдал все лабы? да? ну ладно 3." , "OK:(");
@@ -23,4 +23,3 @@ namespace App2
 
    
 }
-

@@ -3,20 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage">
-
-    <!--<StackLayout>
-         Place new controls here 
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>-->
-    <StackLayout Margin="20,35,20,25">
-        <Label Text="Значит так меченый." />
-        <Label Text="Я тебя спас и в благородство играть не буду." />
-        <Label Text="Сдашь для меня математешку и будем в расчете." />
-        <Image Source="https://pp.userapi.com/c848524/v848524909/15ccba/UVMhkHM358U.jpg" 
-               Aspect="Fill"/>
-        <Button Text="Сдай меня!"
+    <ContentPage.Content>
+    <Grid>
+        <Image
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Aspect="Fill"
+            Source="https://pp.userapi.com/c848524/v848524909/15ccba/UVMhkHM358U.jpg" />
+        <ScrollView
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+              
+                <StackLayout Margin="20,35,20,25">
+                    <Label Text="Значит так меченый." />
+                    <Label Text="Я тебя спас и в благородство играть не буду." />
+                    <Label Text="Сдашь для меня математешку и будем в расчете." />
+            
+                    <Button Text="Сдай меня!"
             TextColor="Red"
             Image="icon.png"
             Clicked="Button_Clicked"
@@ -24,6 +27,15 @@
             BorderRadius="6"
             BorderWidth="4"
             BorderColor="Black"
-            HorizontalOptions="Center"/>
-    </StackLayout>
+            HorizontalOptions="Center"
+            VerticalOptions="End"/>
+                    
+                </StackLayout>
+            </ScrollView>
+    </Grid>
+    </ContentPage.Content>
+
+
+
+
 </ContentPage>
