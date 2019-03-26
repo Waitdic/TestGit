@@ -14,7 +14,8 @@
         <Label Text="Значит так меченый." />
         <Label Text="Я тебя спас и в благородство играть не буду." />
         <Label Text="Сдашь для меня математешку и будем в расчете." />
-
+        <Image Source="https://pp.userapi.com/c848524/v848524909/15ccba/UVMhkHM358U.jpg" 
+               Aspect="Fill"/>
         <Button Text="Сдай меня!"
             TextColor="Red"
             Image="icon.png"

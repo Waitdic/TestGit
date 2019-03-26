@@ -16,7 +16,7 @@ namespace App2
 
         async void Button_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Alert", "This is an alert." , "OK");
+            await DisplayAlert("Математишка", "а ты сдал все лабы? да? ну ладно 3." , "OK:(");
             var image = new Image { Source = "Matematishka" };
         }
     }
