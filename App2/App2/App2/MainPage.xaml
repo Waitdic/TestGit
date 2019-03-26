@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage">
+
+    <!--<StackLayout>
+         Place new controls here 
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+    </StackLayout>-->
+    <StackLayout Margin="20,35,20,25">
+        <Label Text="Значит так меченый." />
+        <Label Text="Я тебя спас и в благородство играть не буду." />
+        <Label Text="Сдашь для меня математешку и будем в расчете." />
+
+        <Button Text="Сдай меня!"
+            TextColor="Red"
+            Image="icon.png"
+            Clicked="Button_Clicked"
+            BackgroundColor="Black"
+            BorderRadius="6"
+            BorderWidth="4"
+            BorderColor="Black"
+            HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>
