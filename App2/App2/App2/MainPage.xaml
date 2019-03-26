@@ -15,20 +15,24 @@
                 VerticalOptions="FillAndExpand">
               
                 <StackLayout Margin="20,35,20,25">
-                    <Label Text="Значит так меченый." />
-                    <Label Text="Я тебя спас и в благородство играть не буду." />
-                    <Label Text="Сдашь для меня математешку и будем в расчете." />
+                    <Label Text="Значит так меченый." 
+                           TextColor="MidnightBlue"/>
+                    <Label Text="Я тебя спас и в благородство играть не буду." 
+                           TextColor="MidnightBlue"/>
+                    <Label Text="Сдашь для меня математешку и будем в расчете." 
+                           TextColor="MidnightBlue"/>
             
                     <Button Text="Сдай меня!"
             TextColor="Red"
-            Image="icon.png"
+            Image="https://pp.userapi.com/c854224/v854224631/a5c2/jUrvN-fvbuQ.jpg"
+            
             Clicked="Button_Clicked"
-            BackgroundColor="Black"
             BorderRadius="6"
             BorderWidth="4"
-            BorderColor="Black"
+            BorderColor="Red"
+            BackgroundColor="Black"
             HorizontalOptions="Center"
-            VerticalOptions="End"/>
+            VerticalOptions="EndAndExpand"/>
                     
                 </StackLayout>
             </ScrollView>
