@@ -11,15 +11,21 @@ namespace App2
     {
         public MainPage()
         {
-            
+
             InitializeComponent();
         }
         async void Button_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Математишка", "а ты сдал все лабы? да? ну ладно 3." , "OK:(");
+            await DisplayAlert("Математишка", "а ты сдал все лабы? да? ну ладно 3.", "OK:(");
             var image = new Image { Source = "Matematishka" };
         }
-    }
+        private async void ButtonClickedNo(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SeconPage());
 
-   
+
+        }
+    }
+ 
+
 }
