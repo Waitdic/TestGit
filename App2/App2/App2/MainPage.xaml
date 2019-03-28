@@ -21,17 +21,15 @@
                            TextColor="MidnightBlue"/>
                     <Label Text="Сдашь для меня математешку и будем в расчете." 
                            TextColor="MidnightBlue"/>
-                    
-            <Button 
-                BorderRadius="2"
-                BorderWidth="10"
-                Image="https://pp.userapi.com/c854224/v854224631/a5c2/jUrvN-fvbuQ.jpg"
-                Text="Нет"
-                Clicked="ButtonClickedNo"
-                ContentLayout="Right, 20"
-                HorizontalOptions="Center"
-                FontSize="Large"/>
-                    
+
+                    <Image Source="App2.Images.ButtonEgOr.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                Tapped="OnImageNameTapped"
+                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
                     <Button Text="Сдай меня!"
             TextColor="Red"
             Clicked="Button_Clicked"

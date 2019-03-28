@@ -17,13 +17,18 @@ namespace App2
         async void Button_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("Математишка", "а ты сдал все лабы? да? ну ладно 3.", "OK:(");
-            var image = new Image { Source = "Matematishka" };
         }
-        private async void ButtonClickedNo(object sender, EventArgs e)
+
+        void OnImageNameTapped(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new SeconPage());
-
-
+            try
+            {
+                //Code to execute on tapped event
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
  

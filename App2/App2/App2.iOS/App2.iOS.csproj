@@ -163,4 +163,7 @@
       <Name>App2</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ButtonEgOr.png" />
+  </ItemGroup>
 </Project>
