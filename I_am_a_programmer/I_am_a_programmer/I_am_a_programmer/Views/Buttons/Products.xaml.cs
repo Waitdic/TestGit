@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace I_am_a_programmer
+namespace I_am_a_programmer.Views.Buttons
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Marks : ContentPage
+	public partial class Products : ContentPage
 	{
-		public Marks ()
+		public Products ()
 		{
 			InitializeComponent ();
 		}

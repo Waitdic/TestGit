@@ -14,24 +14,73 @@ namespace I_am_a_programmer.Views
         public MainPage()
         {
             InitializeComponent();
-
+            Detail = new NavigationPage(new Views.Buttons.PersonalArea())
+            {
+                BarBackgroundColor = Color.FromHex("FF0000")
+            };
             MasterBehavior = MasterBehavior.Popover;
+            
             // MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
         }
 
-        private void ButtonAll_labsClick(object sender, EventArgs e)
+        //Никита
+        private void Button_PersonalArea(object sender, EventArgs e)
         {
             
-            Detail = new NavigationPage(new All_labs())
+            Detail = new NavigationPage(new Views.Buttons.PersonalArea())
             {
                 BarBackgroundColor = Color.FromHex("FF0000")
             };
             IsPresented = false;
         }
 
-        private void ButtonMarksClick(object sender, EventArgs e)
+        //Степа
+        private void Button_ServicePoints(object sender, EventArgs e)
         {
-            Detail = new NavigationPage(new Marks())
+            Detail = new NavigationPage(new Views.Buttons.ServicePoints())
+            {
+                BarBackgroundColor = Color.FromHex("FF0000")
+            };
+            IsPresented = false;
+        }
+
+        //Витя
+        private void Button_Map(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new Views.Buttons.Map())
+            {
+                BarBackgroundColor = Color.FromHex("FF0000")
+            };
+            IsPresented = false;
+        }
+
+       // Паша
+        private void Button_Products(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new Views.Buttons.Products())
+            {
+                BarBackgroundColor = Color.FromHex("FF0000")
+            };
+            IsPresented = false;
+        }
+
+        //Миша
+        private void Button_Personnel(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new Views.Buttons.Personnel())
+            {
+                BarBackgroundColor = Color.FromHex("FF0000")
+            };
+            IsPresented = false;
+        }
+
+        private void Button_AboutApp(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new Views.Buttons.AboutApp())
             {
                 BarBackgroundColor = Color.FromHex("FF0000")
             };

@@ -9,17 +9,19 @@
         <ContentPage Title="Хоба выехал" BackgroundColor="#DCDCDC">
             <ContentPage.Content>
                 <StackLayout Padding="5,30,5,30">
-                    
-                    <!--<Button Text="Лабы по матеше" Clicked="ButtonAll_labsClick"></Button>
-                    <Button Text="Твои оценки" Clicked="ButtonMarksClick"></Button>-->
-
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+    
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <!--<Image WidthRequest="65" HeightRequest="65" Aspect="AspectFit" Source="icon.png" VerticalOptions="Center"></Image>-->
-                        <Label Text="User" VerticalOptions="Center"></Label>
+                        <Label Text="СНК" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontSize="Large"></Label>
                     </StackLayout>
 
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                        <Button Text="Лабы по матеше" Clicked="ButtonAll_labsClick"></Button>
+                    <StackLayout>
+                        <Button Text="Личный кабинет" Clicked="Button_PersonalArea"></Button>
+                        <Button Text="Точки обслуживания" Clicked="Button_ServicePoints"></Button>
+                        <Button Text="Карта" Clicked="Button_Map"></Button>
+                        <Button Text="Товары" Clicked="Button_Products"></Button>
+                        <Button Text="Персонал" Clicked="Button_Personnel"></Button>
+                        <Button Text="О приложении" Clicked="Button_AboutApp"></Button>
                     </StackLayout>
 
                 </StackLayout>
