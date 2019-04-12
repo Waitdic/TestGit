@@ -7,34 +7,36 @@
 
     <MasterDetailPage.Master>
         <ContentPage Title="Хоба выехал" BackgroundColor="#DCDCDC">
-        <!-- </ContentPage> -->
+            <ContentPage.Content>
+                <StackLayout Padding="5,30,5,30">
+                    
+                    <!--<Button Text="Лабы по матеше" Clicked="ButtonAll_labsClick"></Button>
+                    <Button Text="Твои оценки" Clicked="ButtonMarksClick"></Button>-->
 
-        <ContentPage.Content>
-            <StackLayout Padding="5,30,5,30">
-                <Button Text="Лабы по матеше"></Button>
-                <Button Text="Твои оценки"></Button>
-            </StackLayout>
-        </ContentPage.Content>
-        <!--<views:MenuPage />-->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <!--<Image WidthRequest="65" HeightRequest="65" Aspect="AspectFit" Source="icon.png" VerticalOptions="Center"></Image>-->
+                        <Label Text="User" VerticalOptions="Center"></Label>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Button Text="Лабы по матеше" Clicked="ButtonAll_labsClick"></Button>
+                    </StackLayout>
+
+                </StackLayout>
+            </ContentPage.Content>
         </ContentPage>
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
         <ContentPage>
             <ContentPage.Content>
-                <Label Text="А вот и я" VerticalOptions="Fill" HorizontalOptions="Center">
+                <StackLayout>
+                    
+                    <Label Text="Ну привет!" FontSize="Large" VerticalOptions="Fill" HorizontalOptions="Center">
                     </Label>
+                </StackLayout>
             </ContentPage.Content>
         </ContentPage>
-        <!--<NavigationPage>
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
-            <x:Arguments>
-                <views:ItemsPage />
-            </x:Arguments>
-        </NavigationPage>-->
+               
     </MasterDetailPage.Detail>
 </MasterDetailPage>

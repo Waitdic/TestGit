@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="I_am_a_programmer.Marks"
              Title="Оценочке">
-    <ContentPage.Content>
+
+  
+        <ContentPage.Content>
         <StackLayout>
             <Label Text="Оценочке вот твои!"
                 VerticalOptions="CenterAndExpand" 

@@ -16,8 +16,26 @@ namespace I_am_a_programmer.Views
             InitializeComponent();
 
             MasterBehavior = MasterBehavior.Popover;
+            // MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+        }
 
-           // MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+        private void ButtonAll_labsClick(object sender, EventArgs e)
+        {
+            
+            Detail = new NavigationPage(new All_labs())
+            {
+                BarBackgroundColor = Color.FromHex("FF0000")
+            };
+            IsPresented = false;
+        }
+
+        private void ButtonMarksClick(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new Marks())
+            {
+                BarBackgroundColor = Color.FromHex("FF0000")
+            };
+            IsPresented = false;
         }
 
         public async Task NavigateFromMenu(int id)
@@ -46,6 +64,6 @@ namespace I_am_a_programmer.Views
 
                 IsPresented = false;
             }
-        }
+    }
     }
 }
