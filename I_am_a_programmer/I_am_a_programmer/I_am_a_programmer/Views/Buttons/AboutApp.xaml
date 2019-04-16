@@ -5,9 +5,16 @@
              Title="AboutApp">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame 
+                CornerRadius="12"
+                BackgroundColor="White"
+                Margin="10,10,10,0">
+
+                <Grid>
+
+
+                </Grid>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

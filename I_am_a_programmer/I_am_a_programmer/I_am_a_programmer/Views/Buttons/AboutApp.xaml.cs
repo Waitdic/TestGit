@@ -9,12 +9,15 @@ using Xamarin.Forms.Xaml;
 
 namespace I_am_a_programmer.Views.Buttons
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AboutApp : ContentPage
-	{
-		public AboutApp ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AboutApp : ContentPage
+    {
+        public AboutApp()
+        {
+            BackgroundColor = Color.FromHex("#DCDCDC");
+
+
+            InitializeComponent();
+        }
+    }
 }
