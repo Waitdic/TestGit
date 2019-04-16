@@ -16,5 +16,14 @@ namespace I_am_a_programmer.Views.Buttons
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            if (Login.Text != null & Password.Text != null)
+            {
+            }
+            else
+                DisplayAlert("Alert!", "Enter login and password!", "OK");
+        }
+    }
 }

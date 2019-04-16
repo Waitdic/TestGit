@@ -5,9 +5,22 @@
              Title="PersonalArea">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Enter your cooperative login and password." 
+           HorizontalOptions="Center"
+           HeightRequest="45" />
+            <Editor
+            x:Name="Login"
+            Placeholder="Login"
+            HeightRequest="50" />
+            <Editor
+            x:Name="Password"
+            Placeholder="Password"
+            HeightRequest="55"/>
+            <Button
+            Text="Enter"
+            HeightRequest="60"
+            Clicked="Button_Clicked"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
