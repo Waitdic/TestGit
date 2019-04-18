@@ -4,9 +4,16 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SQLite;
+using System.IO;
 
 namespace I_am_a_programmer.Views
 {
+    public interface ISQLite
+    {
+        string GetDatabasePath(string filename);
+    }
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : MasterDetailPage
     {
